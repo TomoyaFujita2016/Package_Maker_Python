@@ -18,6 +18,7 @@ mv Python_Package_Sample/ ${PACKAGE_NAME}/
 cd ${PACKAGE_NAME}
 rm -rf .git/
 mkdir -p "src/${PACKAGE_NAME}/" "examples/" "tests/"
+touch "src/${PACKAGE_NAME}/__init__.py"
 
 echo "# ${PACKAGE_NAME}" > README.md
 git init

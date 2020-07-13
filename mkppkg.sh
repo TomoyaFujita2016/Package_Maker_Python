@@ -12,12 +12,12 @@ if [ -e ${PACKAGE_NAME} ]; then
     exit 1
 fi
 
-git clone https://github.com/TomoyaFujita2016/Python_Package_Sample
+git clone https://github.com/TomoyaFujita2016/Python_Package_Sample _Python_Package_Sample
 mv Python_Package_Sample/ ${PACKAGE_NAME}/
 
 cd ${PACKAGE_NAME}
 rm -rf .git/
-mkdir -p "src/${PACKAGE_NAME}/" "sample/" "test/"
+mkdir -p "src/${PACKAGE_NAME}/" "examples/" "tests/"
 
 echo "# ${PACKAGE_NAME}" > README.md
 git init
